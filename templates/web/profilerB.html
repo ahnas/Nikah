@@ -1,0 +1,203 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block title %}Complete Registration B{% endblock %}
+
+{% block content %}
+
+<style>
+    .error{
+        color: red;
+    }
+</style>
+    
+ 
+    
+      <section class="profiler">
+
+        <div class="container">
+            <div class="row profiler-head">
+                
+                
+
+                <div class="col-lg-10 col-md-11 col-sm-12 col-11 pro-box">
+                    <div class="row text-center">
+                        <div class="col-12">
+                       <p><span class="">|</span> Education and Profession  </p>
+                    </div>
+    
+                    </div>
+                    <form action="#" name="profilerB">
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputFirstname">Highest Education</label>
+                                <input type="text" class="form-control" name="highestEducation" id="highestEducation" placeholder="highest Education">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="inputLastname">Profession</label>
+                                <input type="text" class="form-control" name="profession" id="profession" placeholder="profession">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <label for="inputAddressLine2">Profession Type (Optional)</label>
+                                <input type="text" class="form-control" name="professionType" id="professionType" placeholder="professionType">
+                            </div>
+                            
+                        </div>
+
+                        <div class="row text-center">
+                            <div class="col-12">
+                           <p><span class="">|</span> Location Details </p>
+                        </div>
+        
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputCity">Native Country</label>
+                                <input type="text" class="form-control" name="nativeCountry" id="nativeCountry" placeholder="nativeCountry">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="inputState">Native State</label>
+                                <input type="text" class="form-control" name="nativeState" id="nativeState" placeholder="nativeState">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputContactNumber">Native City</label>
+                                <input type="text" class="form-control" name="nativeCity" id="nativeCity" placeholder="nativeCity">
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="inputContactNumber">House Name</label>
+                                <input type="text" class="form-control" name="houseName" id="houseName" placeholder="HouseName">
+                            </div>
+                            
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputContactNumber">locality</label>
+                                <input type="text" class="form-control" name="locality" id="locality" placeholder="Locality">
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="inputContactNumber">Pincode</label>
+                                <input type="text" class="form-control" name="pincode" id="pincode" placeholder="Pincode">
+                            </div>
+                            
+                        </div>
+
+                        <div class="row text-center">
+                            <div class="col-12">
+                           <p><span class="">|</span> Contact Details </p>
+                        </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputContactNumber">Primary Number</label>
+                                <input type="text" class="form-control" name="primaryNumber" id="primaryNumber" placeholder="primaryNumber">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="inputWebsite">Secondary Number</label>
+                                <input type="text" class="form-control" name="secondaryNumber" id="secondaryNumber" placeholder="secondaryNumber">
+                            </div>
+                            
+                        </div>
+
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputContactNumber">Preferered Person of Contact</label>
+                                <input type="text" class="form-control" name="preferedContact" id="preferedContact" placeholder="preferedContact">
+
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="inputWebsite">Relation</label>
+                                <input type="text" class="form-control" name="relation" id="relation" placeholder="relation">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <label for="inputContactNumber">Describe Yourself</label>
+                                <textarea type="text" class="form-control" name="describe" id="describe" placeholder="Describe Yourself" rows="5"></textarea>
+                            </div>
+                            
+                        </div>
+
+                       
+
+
+
+                        
+                        <div class="row text-center">
+                            <div class="col-12">
+                           <p><span class="">|</span> Religious Details</p>
+                        </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputContactNumber">Perform Namaz</label>
+                                {{form.performNamaz}}
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="inputWebsite">Religiousness</label>
+                                <input type="text" class="form-control" name="religiousness" id="religiousness" placeholder="religiousness">
+                            </div>
+                            
+                        </div>
+
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputContactNumber">Read Quran</label>
+                               {{form.readQuran}}
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="inputWebsite">Madrassa Education</label>
+                                <input type="text" class="form-control" name="madrassaEducation" id="madrassaEducation" placeholder="Madrassa Education">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <label for="inputContactNumber">Attend Islamic Services</label>
+                                {{form.attendIslamicServices}}
+
+                            </div>
+                            
+                        </div>
+
+                        <div class="form-group row text-center">
+                            <div class="col">
+                            <button type="submit" class="btn btn-primary px-4 save">Save & Continue</button>
+                        </div>
+                        </div>
+                            
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+      </section>
+
+      {% block javascript %}
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+            <!--  validation script  -->
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.0/jquery.validate.min.js"></script>
+        <script src="{% static 'web/js/profilerB.js' %}"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script src="{% static 'web/js/header.js' %}"></script>
+        <script src="{% static 'web/js/profileCheckB.js' %}"></script>
+     {% endblock %}
+
+
+    
+
+    {% endblock %}

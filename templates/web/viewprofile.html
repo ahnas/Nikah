@@ -1,0 +1,355 @@
+
+
+{% extends 'web/base.html' %}
+{% load static %}
+{% block title %}View Profile{% endblock %}
+
+{% block content %}
+
+
+
+{% include "web/partials/header2.html" %}
+    <section class="explore pb-0">
+      <div class="container">
+          <div class="row exx mb-4">
+              
+              <div class="col-12">
+                <p>View full profile</p> 
+              </div>
+          </div>
+          
+      </div>
+    </section>
+    <form action="#">
+        <input type="hidden" id="profileID" value="{{id}}">
+     </form>
+
+    <div class="container pager boardd">
+       
+        <div class="row member board">
+
+
+            <div class="col-12 p-2 ">
+                <div class="pager-coll pager-colll">
+                <div class="row p15">
+                 <div class="col-lg-4 col-md-4 col-sm-12 pr-0 des-img">
+                <img id="profileimage" src="" alt="">
+                    <div class="d-flex fta">
+                <p class="sta"><i class="icofont-star"></i>Add to Star list</p>
+                <p class="sta"><i class="icofont-ui-text-chat"></i>Chat</p>
+            </div>
+             </div>
+                
+
+
+             <div class="col-lg-8 col-md-8 col-sm-12 pro-detail parttt pr-0 view">      
+                  
+                <h2 class="m-0 KM101" id="ProfileName"><span class="float-right disp">Like this profile? <button class="btnn ml-3"><i class="icofont-ui-love mr-2"></i>Like</button></span></h2>
+                <div class="row text-center d-none part">
+                    <div class="col-4"><h6 >Age</h6></div>
+                    <div class="col-4"><h6 >Marital status</h6></div>
+                    <div class="col-4"><h6 >Created by</h6></div>
+
+                    <div class="col-4"><h5 id="dateOfBirth"></h5></div>
+                    <div class="col-4"><h5 id="martialStatus"></h5></div>
+                    <div class="col-4"><h5 id="profileCreated"></h5></div>
+
+                </div>
+                <p class="mb-4 disp" id=""><span class="sp1" id="dateOfBirthpc"></span> <span class="sp1 ml-3" id="martialStatuspc">Unmarried</span>  <span class="sp1 ml-3" id="nativeCityPC">Calicut</span> </p> 
+                <h2 style="color: #1C57C9;">My self-summary</h2>
+                <p class="mb-4" id="describe"></p>
+                
+                
+             <div class="row viewp">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                <p><span><i class="icofont-users-alt-3 mr-2"></span></i><span id="bodyType">ft 5 in | 65 kg | Fit</span></p>
+                <p><span><i class="icofont-user mr-2"></span></i><span id="relegion">Muslim | Sunni</span></p>
+                <p><span><i class="icofont-web mr-2"></span></i><span id="highestEducation">B-Tech</span> </p>
+                <p><span><i class="icofont-bag mr-2"></span></i><span id="profession">UI/UX Designer</span></p>
+                <p><span><i class="icofont-users-alt-1 mr-2"></span></i><span id="brothersister">2 Brothers</span></p>
+                <p><span><i class="icofont-audio mr-2"></span></i><span id="motherTongue">Malayalam,Tamil,Telugu</span></p>
+                <p><span><i class="icofont-users-social mr-2"></span></i><span id="ethnicGroup">Extended Family</span></p>
+                <p><span><i class="icofont-cubes mr-2"></span></i><span id="eliteclass">Elite Class</span></p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <p><span><i class="icofont-flag mr-2"></span></i><span id="nationality">Indian</span></p>
+                <p><span><i class="icofont-paint mr-2"></span></i><span id="complexion">Very fair</span></p>
+                <!-- <p><span><i class="icofont-book-mark mr-2"></span></i><span id="">Asian</span></p> -->
+                <!-- <p><span><i class="icofont-web mr-2"></span></i><span id="motherTongue">Malayalam</span></p> -->
+                <p><span><i class="icofont-no-smoking mr-2"></span></i><span id="smoking">Occasionally</span></p>
+                <p><span><i class="icofont-beverage mr-2"></span></i><span id="drinking">Doesn't drink</span></p>
+                <p><span><i class="icofont-user-male mr-2"></span></i><span id="fatherocupation">Software Developer</span></p>
+                <p><span><i class="icofont-user-female mr-2"></span></i><span id="motherocupation">House Wife</span></p>
+                
+            </div>
+
+            
+                <div class="col-12 d-flex justify-content-center likhh">
+                    <div class="d-none three justify-content-center">
+                        <div class="row">
+
+                        <div class="col-4"><p class="sta"><i class="icofont-ui-text-chat"></i></p></div>
+                        <div class="col-4"><p class="sta"><i class="icofont-heart"></i></p></div>
+                        <div class="col-4"><p class="sta"><i class="icofont-star"></i></p></div>
+                          
+                    </div>
+                </div>
+                </div>
+            
+                
+
+                
+                </div>
+                
+
+            </div> 
+        
+            
+                </div>
+            </div>
+            </div>
+            <div class="row coret">
+                <div class="col-lg-6 col-md-10 col-sm-12 col-12">
+                    <div class="row reli">
+                     <div class="col-12">
+                         <h2> <span> <i class="icofont-book"></i> </span> Religious information</h2>
+                     </div>
+                     <div class="col-5">
+                         <p>Perform Namaz </p>
+                     </div>
+                     <div class="col-5">
+                       <p id="performNamaz">: </p>  
+                     </div>
+                     <div class="col-5">
+                         <p>Religiousness</p>
+                     </div>
+                     <div class="col-5">
+                       <p id="relegiousStatus">: </p>  
+                     </div>
+                    <div class="col-5">
+                     <p> Read Quran </p>
+                 </div>
+                 <div class="col-5">
+                   <p id="quran">: </p>  
+                 </div>
+                 <div class="col-5">
+                     <p>Madrasa Education </p>
+                 </div>
+                 <div class="col-5">
+                   <p id="madrassaEdu">: </p>  
+                 </div>
+                 <div class="col-5">
+                     <p>Attend Islamic Services </p>
+                 </div>
+                 <div class="col-5">
+                   <p id="islamicsercices">: </p>  
+                 </div>
+     
+                </div>
+                
+            </div>
+             </div>
+            
+        </div>
+
+       
+        <div class="row premium mt-5 minc">
+            <div class="col-12">
+                <h3>Premium features</h3>
+                <p>Here is your premium features, explore it now!</p>
+            </div>
+        </div>
+
+
+        <div class="row number ml-5 mt-5 mlinc fonti">
+            <div class="col-lg-7 col-md-12 col-sm-12">
+                <div class="row">
+
+                    <div class="col-2">
+                        <i class="icofont-phone"></i>
+                    </div>
+                    <div class="col-4 pad00"><h4>Primary Number</h4>
+                        <p id="primaryNumber">+91 9876543210</p>
+                    </div>
+                    <div class="col-1 d-none kiml">
+
+                    </div>
+                    <div class="col-5 pad00"><h4>Secondary Number</h4>
+                        <p id="secondaryNumber">+91 9876543211</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row number numberr ml-5 mt-5 mlinc fonti">
+            <div class="col-12">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 mbdec">
+                        <div class="row">
+                        <div class="col-2 adrs"><i class="icofont-home"></i></div>
+                        
+                        <div class="col-10">
+                            <h4>Native Address</h4>
+                            <p id="nativeaddress"></p>
+                        </div>
+                        
+                    </div>
+                        
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="row">
+                        <div class="col-2 adrs"><i class="icofont-location-pin"></i></div>
+                        
+                        <div class="col-10">
+                            <h4>Current Address</h4>
+                            <p id="currentAddress"></p>
+                        </div>
+                        
+                    </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="row number numberr ml-5 mt-5 mlinc">
+            <div class="col-lg-8 col-md-9 col-sm-12">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 between">
+                        <div class="row wha">
+                        <div class="col-lg-3 col-md-3 col-sm-2 col-2 adrs adrss"><img src="{% static 'web/image/whatsappp.jpg' %}" alt=""></div>
+                        
+                        <div class="col-lg-9 col-md-9 col-sm-10 col-10">
+                            <p id="whatsapp">+91 9876543210</p>
+                        </div>
+                        
+                    </div>
+                        
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-6 col-sm-12 ">
+                        <div class="row wha">
+                        <div class="col-lg-3 col-md-3 col-sm-2 col-2 adrs adrss"><img src="{% static 'web/image/gmail.png' %}" alt=""></div>
+                        
+                        <div class="col-lg-9 col-md-9 col-sm-10 col-10">
+                            <p id="profileEmail">username@gmail.com</p>
+                        </div>
+                        
+                    </div>
+                        
+                    </div>
+
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="row number numberr mt-5 match woah">
+            <div class="col-12">
+                <div class="row text-center">
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        
+                            <p><i class="icofont-nerd-smile mr-2"></i> Whooooooooooh,its a great match</p>
+                        
+                    </div>
+                    
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 disp">
+                        
+                        <p>92% match</p>
+                    
+                </div>
+                
+                
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <div class="text-center privacy">
+            <p>Your access to and use of the Nikah Kerala Services or any content is at your own risk. Read Terms& Conditions and Privacy policy <SPAn class="m-0" style="color: #1C57C9;text-decoration: underline;">here</SPAn> </p>
+        </div>
+
+
+        <div class="container pager">
+            <h3 class="for">Similiar profile for you</h3>
+        <div class="row member similiar" id="similarProfiles">
+
+            <!-- <div class="col-lg-4 col-md-6 col-sm-12 col-12 p-2 ">
+                <div class="pager-coll">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 pr-0 simig">
+                <img src="{% static 'web/image/profile.jpg' %}" alt="">
+                    <div class="d-flex">
+                <p class="sta"><i class="icofont-ui-text-chat"></i></p>
+                <p class="sta"><i class="icofont-star"></i></p>
+            </div>
+             </div>
+                
+             
+             
+             <div class="col-lg-6 col-md-6 col-sm-6 col-6 pro-detail floa pr-0">      
+                 <a class="like"><i class="icofont-ui-love"></i>Like</a>        
+                <h4>KM1011201</h4>
+                <p>Age  <span class="sp1 ml-4">22</span> </p> 
+                <p>Status  <span class="sp2">Unmarried</span></p> 
+                <p><span><i class="icofont-users-alt-3 mr-2"></span></i>Muslim</p>
+                <p><span><i class="icofont-web mr-2"></span></i>B-Tech</p>
+                <p><span><i class="icofont-bag mr-2"></span></i>UI/UX Designer</p>
+                <p><span><i class="icofont-location-pin mr-2"></span></i>Kochi</p>
+                
+            </div> 
+        
+            
+                </div>
+            </div>
+            </div> -->
+            
+            
+            
+            
+
+            
+
+        </div>
+        
+    </div>
+
+    </div>
+
+    
+    <div class="container-fluid d-none" id="chatnav">
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="nav-menu iconn">
+                    <ul>
+                      <li class="active"><a href="#"><i class="icofont-binoculars mr-2"></i>Explore</a></li>
+                      <li><a href="#about"><i class="icofont-ui-text-chat mr-2"></i>Chat</a></li>
+                      <li><a href="#portfolio"><i class="icofont-ui-love-add mr-2"></i>Interests</a></li>
+                      
+                      
+                      <li id="userna"><a href="#features"><i class="icofont-ui-user ml-2"></i></a></li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+
+    </div>        
+
+
+    {% endblock %}
+    {% block javascript %}
+    <script src="{% static 'web/js/profiledetails.js' %}"></script>
+    <script src="{% static 'web/js/loadheader.js' %}"></script>
+    <script src="{% static 'web/js/profileselect.js' %}"></script>
+    {% endblock %}

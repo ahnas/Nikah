@@ -1,0 +1,63 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block title %}Login{% endblock %}
+
+{% block content %}
+
+<style>
+    form .error{
+        color: red;
+        font-weight: 600;
+    }
+</style>
+    
+   
+    
+      <section class="login login-coo">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-5 col-md-7 col-sm-7 col-10 login-co">
+                    <form action="#" name="login">
+                        {% csrf_token %}
+                       
+                        <h3>LOGIN <span style="color: black;"><i class="icofont-login" ></i></span> </h3>
+                         
+                        
+                        <p>Email *  </p>
+                        <input id="email"  name="email" class="form-control" type="text" placeholder="Username">
+                        <p id="emailwarning" class="warning"></p>
+                        <p>Password * </p>
+                        <input id="password1" name="password1" class="form-control" type="password" placeholder="Password">
+                        <a href=""><p class="forgot">Forgot Username/Password ?</p></a>
+                        <button id="signin_btn" class="btn btn-primary mb-2">Login Here</button>
+                        <hr>
+                        <a href="#" class="text-center google"> <img width="30px" src="{% static 'web/image/google.png' %}" alt=""> Signin With Google</a>
+                       
+                        <p class="forgot text-center">Don't have an account ?</p>
+                        <a href="{% url 'web:signup' %}" ><p class="forgot text-center sign">Signup</p></a>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+
+
+      {% block javascript %}
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <!--  validation script  -->
+
+<script src="{% static 'web/js/login.js' %}"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+{% endblock %}
+
+
+ 
+    {% endblock %}
+

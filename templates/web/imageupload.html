@@ -1,0 +1,100 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block title %}Photo Upload{% endblock %}
+
+{% block content %}
+    
+<style>
+    .error{
+        color: red;
+    }
+</style>
+    
+      <section class="profiler">
+
+        <div class="container">
+            <div class="row profiler-head">
+                
+                
+
+                <div class="col-lg-10 col-md-11 col-sm-12 col-11 pro-box">
+                    <div class="row text-center">
+                        <div class="col-12">
+                       <p><span class="">|</span> Image Upload </p>
+                    </div>
+                    </div>
+                    <form action="" method="POST" class="ajax" enctype="multipart/form-data">
+                        
+                        {% csrf_token %}
+                             <div class="form-group row" style="place-content: center;">
+                            <div class="col-sm-6 text-center">
+                                <img id="viewImageId" style="width: 220px;" class="mb-3" src="{% static 'web/image/avathar.png' %}" alt="SHow">
+                                <input type="file" class ='form-control' id="image" name="image" required>
+                                <input type="hidden" class ='form-control' id="usernamefield"  name="email1">
+                            </div>
+                            
+                            
+                        </div>
+
+                       
+
+                        <div class="form-group row text-center">
+                            <div class="col">
+                            <button type="submit" class="btn btn-primary px-4 save">Save & Continue</button>
+                        </div>
+                        </div>
+                            
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+      </section>
+
+        <style>
+ 
+.file {
+    position: relative;
+    overflow: hidden;
+}
+.file-input  {
+    position: absolute;
+    font-size: 50px;
+    opacity: 1;
+    right: 0;
+    top: 0;
+}
+        </style>
+
+    
+  
+        
+
+
+
+
+    {% endblock %}
+    
+    {% block javascript %}
+    
+
+    <script>
+       
+        $("#image").change(function () {
+            if (this.files && this.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#viewImageId').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(this.files[0]);
+            }
+        });
+    </script>
+    <script src="{% static 'web/js/header.js' %}"></script>
+    <script src="{% static 'web/js/imageuploadcheck.js' %}"></script>
+    {% endblock javascript %}
+
+
+    
+    

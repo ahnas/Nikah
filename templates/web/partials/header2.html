@@ -1,0 +1,33 @@
+{% load static%}
+<header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="{% url 'web:home' %}"><img src="{% static 'web/image/logo.png' %}"  alt=""></a></h1>
+        
+      <div class="form-group has-search m-0">
+        <span class="icofont-search form-control-feedback"></span>
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+
+      
+      <nav class="nav-menu d-none d-lg-block iconn">
+        <ul class="place-items-center">
+          <li class="active"><a href="#"><i class="icofont-binoculars text-white mr-2"></i>Explore</a></li>
+          <li><a href="#about"><i class="icofont-ui-text-chat mr-2"></i>Chat</a></li>
+          <li><a href="/youlike"><i class="icofont-ui-love-add mr-2"></i>Interests</a></li>
+          
+          
+          <li ><a id="usernamefield1" class="uder dropdown-toggle" data-toggle="dropdown" href="#features"></a> <ul class="dropdown-menu"><li> <a id="logout" href="#">Logout</a> </li></ul> </li>
+            
+           
+        </ul>
+      </nav><!-- .nav-menu -->
+
+
+      
+      
+
+    </div>
+  </header><!-- End Header -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="{% static 'web/js/loadheader.js' %}"></script>

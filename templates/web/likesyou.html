@@ -1,0 +1,265 @@
+
+
+{% extends 'web/base.html' %}
+{% load static %}
+{% block title %}Like You{% endblock %}
+
+{% block content %}
+{% include "web/partials/header2.html" %}
+
+    <section class="explore pb-0">
+      <div class="container">
+          <div class="row exx inter">
+              
+              
+              <div class="col-12 smsm">
+                <p> <span><i class="icofont-ui-love-add" style="color: #00AB3B;"></i></span> Interests</p> 
+              </div>
+
+              <div class="col-6 hrr">
+
+              </div>
+
+              <div class="col-12">
+                  <ul class="d-flex">
+                    <li >  <a class="activee" href="{% url 'web:likesyou' %}">Likes You </a></li>
+                    <li>  <a href="{% url 'web:match' %}">Match </a></li>
+                    <li>  <a  href="{% url 'web:youlike' %}">You Like </a></li>
+                     
+                  </ul>
+              </div>
+          </div>
+          
+      </div>
+    </section>
+
+    <div class="container pager mt-3">
+        <div class="row member" id="memberList">
+
+
+            <!-- <div class="col-lg-4 col-md-6 col-sm-12 col-12 p-2 ">
+                <div class="pager-coll">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 pr-0 likt">
+                <img src="{% static 'web/image/profile.jpg'%}" alt="">
+                    <div class="d-flex" id="likesthreed">
+                <p class="sta staa"><i class="icofont-ui-text-chat"></i></p>
+                <p class="sta staa"><i class="icofont-star"></i></p>
+            </div>
+                     </div>
+                
+
+
+             <div class="col-lg-6 col-md-6 col-sm-12 col-12 pro-detail matchdetail pr-0">      
+                 <div class="matchh">
+                    <i class="icofont-ui-love-add"></i>
+                    <p>89% Match</p>
+                 </div>       
+                <h4>KM1011201</h4>
+                <p>Age  <span class="sp1 ml-4">22</span> </p> 
+                <p>Status  <span class="sp2">Unmarried</span></p> 
+                <p><span><i class="icofont-users-alt-3 mr-2"></span></i>Muslim</p>
+                <p><span><i class="icofont-web mr-2"></span></i>B-Tech</p>
+                <p><span><i class="icofont-bag mr-2"></span></i>UI/UX Designer</p>
+                <p><span><i class="icofont-location-pin mr-2"></span></i>Kochi</p>
+                
+            </div> 
+        
+            
+                </div>
+                <div class="d-none three justify-content-center">
+                    <p class="sta"><i class="icofont-ui-text-chat"></i></p>
+                    <p class="sta matcsm"><i class="icofont-ui-love-add"> 89% Match</i></p>
+                    <p class="sta"><i class="icofont-star"></i></p>
+                </div>
+            </div>
+            </div> -->
+            <!-- <div class="col-lg-4 col-md-6 col-sm-12 col-12 p-2 ">
+                <div class="pager-coll">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 pr-0 likt">
+                <img src="{% static 'web/image/profile.jpg'%}" alt="">
+                    <div class="d-flex" id="likesthreed">
+                <p class="sta staa"><i class="icofont-ui-text-chat"></i></p>
+                <p class="sta staa"><i class="icofont-star"></i></p>
+            </div>
+                     </div>
+                
+
+
+             <div class="col-lg-6 col-md-6 col-sm-12 col-12 pro-detail matchdetail pr-0">      
+                 <div class="matchh">
+                    <i class="icofont-ui-love-add"></i>
+                    <p>89% Match</p>
+                 </div>       
+                <h4>KM1011201</h4>
+                <p>Age  <span class="sp1 ml-4">22</span> </p> 
+                <p>Status  <span class="sp2">Unmarried</span></p> 
+                <p><span><i class="icofont-users-alt-3 mr-2"></span></i>Muslim</p>
+                <p><span><i class="icofont-web mr-2"></span></i>B-Tech</p>
+                <p><span><i class="icofont-bag mr-2"></span></i>UI/UX Designer</p>
+                <p><span><i class="icofont-location-pin mr-2"></span></i>Kochi</p>
+                
+            </div> 
+        
+            
+                </div>
+                <div class="d-none three justify-content-center">
+                    <p class="sta"><i class="icofont-ui-text-chat"></i></p>
+                    <p class="sta matcsm"><i class="icofont-ui-love-add"> 89% Match</i></p>
+                    <p class="sta"><i class="icofont-star"></i></p>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 p-2 ">
+                <div class="pager-coll">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 pr-0 likt">
+                <img src="{% static 'web/image/profile.jpg'%}" alt="">
+                    <div class="d-flex" id="likesthreed">
+                <p class="sta staa"><i class="icofont-ui-text-chat"></i></p>
+                <p class="sta staa"><i class="icofont-star"></i></p>
+            </div>
+                     </div>
+                
+
+
+             <div class="col-lg-6 col-md-6 col-sm-12 col-12 pro-detail matchdetail pr-0">      
+                 <div class="matchh">
+                    <i class="icofont-ui-love-add"></i>
+                    <p>89% Match</p>
+                 </div>       
+                <h4>KM1011201</h4>
+                <p>Age  <span class="sp1 ml-4">22</span> </p> 
+                <p>Status  <span class="sp2">Unmarried</span></p> 
+                <p><span><i class="icofont-users-alt-3 mr-2"></span></i>Muslim</p>
+                <p><span><i class="icofont-web mr-2"></span></i>B-Tech</p>
+                <p><span><i class="icofont-bag mr-2"></span></i>UI/UX Designer</p>
+                <p><span><i class="icofont-location-pin mr-2"></span></i>Kochi</p>
+                
+            </div> 
+        
+            
+                </div>
+                <div class="d-none three justify-content-center">
+                    <p class="sta"><i class="icofont-ui-text-chat"></i></p>
+                    <p class="sta matcsm"><i class="icofont-ui-love-add"> 89% Match</i></p>
+                    <p class="sta"><i class="icofont-star"></i></p>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 p-2 ">
+                <div class="pager-coll">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 pr-0 likt">
+                <img src="{% static 'web/image/profile.jpg'%}" alt="">
+                    <div class="d-flex" id="likesthreed">
+                <p class="sta staa"><i class="icofont-ui-text-chat"></i></p>
+                <p class="sta staa"><i class="icofont-star"></i></p>
+            </div>
+                     </div>
+                
+
+
+             <div class="col-lg-6 col-md-6 col-sm-12 col-12 pro-detail matchdetail pr-0">      
+                 <div class="matchh">
+                    <i class="icofont-ui-love-add"></i>
+                    <p>89% Match</p>
+                 </div>       
+                <h4>KM1011201</h4>
+                <p>Age  <span class="sp1 ml-4">22</span> </p> 
+                <p>Status  <span class="sp2">Unmarried</span></p> 
+                <p><span><i class="icofont-users-alt-3 mr-2"></span></i>Muslim</p>
+                <p><span><i class="icofont-web mr-2"></span></i>B-Tech</p>
+                <p><span><i class="icofont-bag mr-2"></span></i>UI/UX Designer</p>
+                <p><span><i class="icofont-location-pin mr-2"></span></i>Kochi</p>
+                
+            </div> 
+        
+            
+                </div>
+                <div class="d-none three justify-content-center">
+                    <p class="sta"><i class="icofont-ui-text-chat"></i></p>
+                    <p class="sta matcsm"><i class="icofont-ui-love-add"> 89% Match</i></p>
+                    <p class="sta"><i class="icofont-star"></i></p>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 p-2 ">
+                <div class="pager-coll">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 pr-0 likt">
+                <img src="{% static 'web/image/profile.jpg'%}" alt="">
+                    <div class="d-flex" id="likesthreed">
+                <p class="sta staa"><i class="icofont-ui-text-chat"></i></p>
+                <p class="sta staa"><i class="icofont-star"></i></p>
+            </div>
+                     </div>
+                
+
+
+             <div class="col-lg-6 col-md-6 col-sm-12 col-12 pro-detail matchdetail pr-0">      
+                 <div class="matchh">
+                    <i class="icofont-ui-love-add"></i>
+                    <p>89% Match</p>
+                 </div>       
+                <h4>KM1011201</h4>
+                <p>Age  <span class="sp1 ml-4">22</span> </p> 
+                <p>Status  <span class="sp2">Unmarried</span></p> 
+                <p><span><i class="icofont-users-alt-3 mr-2"></span></i>Muslim</p>
+                <p><span><i class="icofont-web mr-2"></span></i>B-Tech</p>
+                <p><span><i class="icofont-bag mr-2"></span></i>UI/UX Designer</p>
+                <p><span><i class="icofont-location-pin mr-2"></span></i>Kochi</p>
+                
+            </div> 
+        
+            
+                </div>
+                <div class="d-none three justify-content-center">
+                    <p class="sta"><i class="icofont-ui-text-chat"></i></p>
+                    <p class="sta matcsm"><i class="icofont-ui-love-add"> 89% Match</i></p>
+                    <p class="sta"><i class="icofont-star"></i></p>
+                </div>
+            </div>
+            </div> -->
+
+            
+            
+            
+            
+
+            
+
+        </div>
+    </div>
+
+      
+
+    <div class="container-fluid d-none" id="chatnav">
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="nav-menu iconn">
+                    <ul>
+                      <li><a href="#"><i class="icofont-binoculars mr-2"></i>Explore</a></li>
+                      <li><a href="#about"><i class="icofont-ui-text-chat mr-2"></i>Chat</a></li>
+                      <li class="active"><a href="#portfolio"><i class="icofont-ui-love-add mr-2"></i>Interests</a></li>
+                      
+                      
+                      <li id="userna"><a href="#features"><i class="icofont-ui-user ml-2"></i></a></li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+
+    </div>   
+      
+    {% endblock %}
+    {% block javascript %}profileselect.js
+    <script src="{% static 'web/js/profilelikesyou.js' %}"></script>
+    <script src="{% static 'web/js/profileselect.js' %}"></script>
+    {% endblock %}

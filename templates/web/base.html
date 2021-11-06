@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikah Malabar | {% block title %}{% endblock %}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <link href="{% static 'web/image/favicon.png' %}" rel="icon">
+
+    <link href="{% static 'web/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'web/icofont/icofont.min.css' %}" rel="stylesheet">
+    <link href="{% static 'web/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'web/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'web/venobox/venobox.css' %}" rel="stylesheet">
+    <link href="{% static 'web/remixicon/remixicon.css' %}" rel="stylesheet">
+    <link href="{% static 'web/aos/aos.css' %}" rel="stylesheet">
+
+    <link href="{% static 'web/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'web/css/responsive.css' %}" rel="stylesheet">
+   
+
+</head>
+<body>
+    {% include "web/partials/header.html" %}
+    {% block content %}
+
+
+
+    {% endblock %}
+    {% include "web/partials/footer.html" %}
+
+    
+  
+    <script src="{% static 'web/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'web/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'web/jquery.easing/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'web/php-email-form/validate.js' %}"></script>
+    <script src="{% static 'web/owl.carousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'web/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'web/venobox/venobox.min.js' %}"></script>
+    <script src="{% static 'web/waypoints/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'web/counterup/counterup.min.js' %}"></script>
+    <script src="{% static 'web/aos/aos.js' %}"></script>
+    <script src="{% static 'web/js/logincheck.js' %}"></script>
+    
+    
+    <!-- Template Main JS File -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="{% static 'web/js/main.js' %}"></script>
+    
+  {% block javascript %}{% endblock %}
+</body>
+</html>

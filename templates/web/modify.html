@@ -1,0 +1,177 @@
+
+{% extends 'web/base.html' %}
+{% load static %}
+{% block title %}Search Profile{% endblock %}
+
+{% block content %}
+{% include "web/partials/header2.html" %}
+    <style>
+        .error{
+            color: red;
+        }
+    </style>
+    <section class="explore dinee pb-0 mobcd">
+      <div class="container">
+          <div class="row exx dine">
+              <div class="col-1">
+                <i style="color: #3acf6e;" class="icofont-search-user"></i>
+            
+              </div>
+              <div class="col-11 ">
+                <p>Search profile</p> 
+              </div>
+          </div>
+          <div class="row">
+              
+              
+
+              
+
+              
+          </div>
+      </div>
+    </section>
+
+   
+
+    <section class="profiler">
+
+        <div class="container">
+            <div class="row profiler-head headg">
+                
+                
+
+                <div class="col-lg-10 col-md-11 col-sm-12 col-11 pro-box">
+                    
+
+                    <form action="#" name="modify">
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputFirstname">Community</label>
+                                {{form.community}}    
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="inputContactNumber">Complexion</label>
+                                {{form.complexion}}
+                            </div> 
+                            
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputAddressLine2">Age From</label>
+                                {{form.ageFrom}}   
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="inputAddressLine2">Age To</label>
+                                {{form.ageTo}} 
+                            </div>
+                            
+                        </div>
+
+                        
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputCity">Martial Status</label>
+                                {{form.martialStatus}}
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="inputState">Body Type</label>
+                               {{form.bodyType}}
+                            </div>
+                        </div>
+                        <div class="form-group row">
+
+                            <div class="col-sm-3">
+                                <label for="inputContactNumber">Height From</label>
+                                {{form.heightFrom}}
+                            </div>
+
+                            <div class="col-sm-3">
+                                <label for="inputContactNumber">Height To</label>
+                               {{form.heightTo}}
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="inputContactNumber">Weight From</label>
+                                {{form.weightFrom}}
+                            </div>
+
+                            <div class="col-sm-3">
+                                <label for="inputContactNumber">Weight To</label>
+                               {{form.weightTo}}
+                            </div>
+                            
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputContactNumber">Smoking</label>
+                             {{form.smoking}}   
+                             </div>
+
+                            <div class="col-sm-6">
+                                <label for="inputContactNumber">Drinking</label>
+                               {{form.drinking}}
+                            </div>
+                            
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <label for="inputContactNumber">Profession</label>
+                               {{form.profession}}
+                            </div>
+                            
+                        </div>
+                        
+
+                 
+                       
+                        <div class="form-group row text-center">
+                            <div class="col">
+                            <button type="submit" class="btn btn-primary px-4 save">Save & Continue</button>
+                        </div>
+                        </div>
+                            
+
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+
+      </section>
+
+
+
+
+      
+    <div class="container-fluid d-none" id="chatnav">
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="nav-menu iconn">
+                    <ul>
+                      <li class="active"><a href="#"><i class="icofont-binoculars mr-2"></i>Explore</a></li>
+                      <li><a href="#about"><i class="icofont-ui-text-chat mr-2"></i>Chat</a></li>
+                      <li><a href="#portfolio"><i class="icofont-ui-love-add mr-2"></i>Interests</a></li>
+                      
+                      
+                      <li id="userna"><a href="#features"><i class="icofont-ui-user ml-2"></i></a></li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+
+    </div>    
+    {% endblock %}
+    {% block javascript %}
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!--  validation script  -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.0/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="{% static 'web/js/preferenceupdate.js' %}"></script>
+
+
+    {% endblock %}

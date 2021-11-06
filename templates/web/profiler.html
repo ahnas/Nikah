@@ -1,0 +1,192 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block title %}Complete Registration{% endblock %}
+
+{% block content %}
+    
+ <style>
+     .error{
+         color: red;
+     }
+ </style>
+    
+      <section class="profiler">
+
+        <div class="container">
+            <div class="row profiler-head">
+                
+                
+
+                <div class="col-lg-10 col-md-11 col-sm-12 col-11 pro-box">
+                    <div class="row text-center">
+                        <div class="col-12">
+                       <p><span class="">|</span> Create Your Profile   </p>
+                    </div>
+    
+                    </div>
+                    <form action="#" name="profiler">
+                        {% csrf_token %}
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputFirstname">Create Profile by</label>
+                                {{form.profileCreated}}
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="inputLastname">Name</label>
+                                <input name="name" id="name" type="text" class="form-control" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputAddressLine1">Gender</label>
+                                {{form.gender}}
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="inputCity">Mobile Number</label>
+                                <input name="moblie" id="moblie" type="text" class="form-control" placeholder="Number">
+                            </div>
+                            
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputWebsite">Your Religion</label>
+                                <input name="relegion" id="relegion" type="text" class="form-control" placeholder="Religion">
+                            </div>
+
+                            <div class="col-sm-6">
+
+                                <label for="inputAddressLine2">Community</label>
+                                {{form.community}}
+                            </div>
+
+                            
+
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputState">Preferred Profile (Community)</label>
+                                {{form.preferredProfile}}
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="inputContactNumber">Date of Birth</label>
+                                <input type="date" id="dateOfBirth" name="dateOfBirth" class="form-control" placeholder="Contact Number">
+                            </div>
+                            
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputWebsite">Nationality</label>
+                                {{form.nationality}}
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="inputWebsite">Height</label>
+                                {{form.height}}
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="inputWebsite">Weight</label>
+                                {{form.weight}}
+                            </div>
+                        </div>
+
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputContactNumber">Martial Status</label>
+                                {{form.martialStatus}}
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="inputWebsite">Complexion</label>
+                                {{form.complexion}}
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputContactNumber">Ethnic Group</label>
+                                <input name="ethnicGroup" id="ethnicGroup" type="text" class="form-control" placeholder="Complexion">
+
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="inputWebsite">Body Type</label>
+                                {{form.bodyType}}
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputContactNumber">Physical Status</label>
+                                <input name="physicalStatus" id="physicalStatus" type="text" class="form-control" placeholder="Physical Status">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="inputWebsite">Mother Tongue</label>
+                                {{form.motherTongue}}
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputContactNumber">Father Occupation</label>
+                                {{form.fatherOccupation}}
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="inputWebsite">Mother Tongue</label>
+                                {{form.motherOccupation}}
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputContactNumber">Brothers</label>
+                                {{form.brothers}}
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="inputWebsite">Sisters</label>
+                                {{form.sisters}}
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputContactNumber">Financial Status</label>
+                                {{form.financialStatus}}
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="inputWebsite">Smoking</label>
+                                {{form.smoking}}
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="inputWebsite">Drinking</label>
+                                {{form.drinking}}
+                            </div>
+                        </div>
+
+                        <div class="form-group row text-center">
+                            <div class="col">
+                            <button type="submit" class="btn btn-primary px-4 save">Save & Continue</button>
+                        </div>
+                        </div>
+                            
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+      </section>
+
+
+
+      
+      {% block javascript %}
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+            <!--  validation script  -->
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.0/jquery.validate.min.js"></script>
+        <script src="{% static 'web/js/profiler.js' %}"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script src="{% static 'web/js/header.js' %}"></script>
+        <script src="{% static 'web/js/profilecheckA.js' %}"></script>
+     {% endblock %}
+
+    {% endblock %}

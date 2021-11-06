@@ -1,0 +1,25 @@
+{% load static %}
+<header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="{% url 'web:index' %}"><img src="{% static 'web/image/logo.png' %}"  alt=""></a></h1>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="{% url 'web:index' %}">Home</a></li>
+          <li><a href="#about">Features</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#footer">Contact</a></li>
+          <li><a href="#team">FAQ</a></li>
+          
+
+        </ul> 
+      </nav><!-- .nav-menu -->
+      <div class="ribtns" id="username" >
+      </div>
+      
+    
+    </div>
+
+    </div>
+  </header><!-- End Header -->
