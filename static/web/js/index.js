@@ -11,8 +11,8 @@ $(document).ready(function () {
         success: function (response) {
             // $('#username').html("<a href='#' class='text-white'>"+myArr[1]+"</a>");
             $('#findsoulmate').html("<a href='home/' ><button class='btn btnr'>Find your Soulmate</button></a>");
-            $('#username').html("<a onclick='logout()' href='#' class='get-started-btnn'>logout</a>");
-            
+            $('#username').html("<a onclick='logout()' href='#' style='background-color: #3acf6e; font-weight: 600;' class='get-started-btnn'>logout</a>");
+            window.location='http://127.0.0.1:8000/home/'
             // $('#usernamefield1').html(myArr[1]+"&nbsp&nbsp&nbsp<img style='border-radius: 50%;width:30px;height:30px;'src='"+myArr[0] +"' alt='SDGDSA'>");
             //sessionStorage.setItem("token", response['token'])
         },

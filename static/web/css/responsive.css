@@ -7,6 +7,7 @@
     }
 }
 @media only screen and (max-width: 1400px){
+    
     .login-coo {
         background-image: url(../image/shape.png);
         background-repeat: no-repeat;
@@ -16,6 +17,11 @@
 }
 
 @media only screen and (max-width: 1200px){
+    #header .logo a {
+        color: #fff;
+        background-color: white;
+        padding: 20px 103px;
+    }
     .find-sub-left {
         margin-left: 50%;
     }
@@ -26,13 +32,55 @@
         background-position-x: center;
     }
 }
+
 @media only screen and (max-width: 992px){
+    .maa {
+        font-size: 20px;
+        color: #3acf6e;
+        font-weight: 600;
+    }
+    #header .logo img {
+        max-height: 45px;
+    }
+    .nav-menu a {
+        display: block;
+        position: relative;
+        color: #1c57c9;
+        transition: 0.3s;
+        font-size: 15px;
+        font-weight: 600;
+        padding: 0px 7px;
+    }
+    .has-search .form-control {
+        padding-left: 3.375rem;
+        width: 260px;
+        margin-right: 0px;
+        color: white;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+    }
+
+    #header .logo a {
+        color: #fff;
+        background-color: white;
+        padding: 11% 35%;
+    }
+    .nav-menu > ul > li {
+        position: relative;
+        white-space: nowrap;
+        padding: 10px 0 10px 10px;
+    }
+    .has-search .form-control {
+        padding-left: 3.375rem;
+        width: 265px;
+        margin-right: 0px;
+        color: white;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+    }
     .member span {
         color: #1c57c9;
-        margin: 0px
-     0px
-     0px
-     0px;
+        margin: 0px 0px 0px 0px;
     }
     .pro-detail p {
         padding: 2px 0px;
@@ -119,6 +167,32 @@
 }
 
 @media only screen and (max-width: 768px){
+    .deaser .logo a {
+        color: #fff;
+        background-color: #3acf6e !important;
+        padding: 18px 0px !important;
+    }
+    .maa {
+        font-size: 21px;
+        color: #3acf6e;
+        font-weight: 600;
+        text-align: center;
+    }
+    .no h4 {
+        padding-left: 27%;
+        font-size: 44px;
+        font-weight: 600;
+    }
+    .relats img{
+        width: 600px;
+    }
+
+    .relats {
+        position: relative;
+        right: 60px;
+        top: 10px;
+    }
+
     
     .member a {
         color: #3acf6e;
@@ -285,10 +359,10 @@
         position: absolute;
         bottom: 0;
         top: 0;
-        left: 0;
+        left: 43%;
         right: 0;
-        background-color: #3acf6e;
-        border-bottom-right-radius: 33%;
+        background-color: #e1ffeb;
+        border-bottom-left-radius: 40%;
     }
     #hero {
         width: 100%;
@@ -301,9 +375,19 @@
         left: 0px;
     }
 
+    .ribtnss {
+        margin-left: 28%;
+        margin-right: 0px;
+    }
+    .noo p {
+        font-size: 15px;
+        font-weight: 600;
+        margin: 0px 0px 10px 0px;
+        padding-left: 36%;
+    }
 
       #hero h1 {
-        font-size: 63px !important;
+        font-size: 50px !important;
         line-height: 70px;
         text-align: center;
         font-weight: 1000 !important;
@@ -339,6 +423,27 @@
 
 }
 @media only screen and (max-width: 576px) {
+    .deaser{
+        padding: 22px 0 !important;
+    }
+    .sedre{
+        margin-top: 15% !important;
+    }
+    .plac{
+        place-content: center;
+    }
+    .ribtns span {
+        font-weight: 600;
+        margin-right: 30px;
+    }
+    .ribtns {
+        margin-right: 0px;
+    }
+    #header .logo a {
+        color: #fff;
+        background-color: white;
+        padding: 5% 56px;
+    }
     .woah{
         padding: 3% 0px;
         margin-left: -32px;
@@ -664,10 +769,10 @@
         position: absolute;
         bottom: 0;
         top: 0;
-        left: 0;
+        left: 43%;
         right: 0;
-        background-color: #3acf6e;
-        border-bottom-right-radius: 0%;
+        background-color: #e1ffeb;
+        border-bottom-left-radius: 40%;
     }
     .ribtn{
         margin-right: 5%;
@@ -689,16 +794,17 @@
         position: absolute;
         bottom: 0;
         top: 0;
-        left: 0;
+        left: 43%;
         right: 0;
-        background-color: #3acf6e;
+        background-color: #e1ffeb;
+        border-bottom-left-radius: 40%;
     }
     .bannerhead {
         left: 0;
     }
 
     #hero h1 {
-        font-size: 50px !important;
+        font-size: 40px !important;
         line-height: 60px;
         text-align: center;
     }
@@ -904,7 +1010,7 @@
         font-weight: bolder;
     }
     #header .logo img {
-        max-height: 34px;
+        max-height: 35px;
     }
     .has-search .form-control {
         padding-left: 3.375rem;
@@ -999,6 +1105,102 @@
     
   }
 @media only screen and (max-width: 414px){
+    .maa {
+        padding: 0px 10px;
+        font-size: 20px;
+        color: #3acf6e;
+        font-weight: 600;
+        text-align: center;
+    }
+    .sedre {
+        margin-top: 20% !important;
+    }
+     
+    .noo p {
+        font-size: 13px;
+        font-weight: 600;
+        margin: 0px 0px 20px 0px;
+        padding-left: 22%;
+    }
+
+    #hero h1 {
+        padding-left: 9%;
+        font-size: 26px !important;
+        line-height: 60px;
+        text-align: center;
+    }
+    .smsiu {
+        left: 0 !important;
+        margin-left: 0 !important;
+        position: relative;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 5px;
+        background-color: #3acf6e;
+        font-weight: 600;
+        top: -5px;
+        font-size: 15px;
+    }
+    .no h4 {
+        padding-left: 13%;
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: 600;
+    }
+    .relats {
+        position: relative;
+        right: 130px;
+        top: 15px;
+    }
+    .relats img {
+        width: 480px;
+    }
+
+    .news {
+        position: relative;
+        color: white;
+        padding: 8px 20px;
+        border-radius: 8px;
+        background-color: #3acf6e;
+        font-weight: 600;
+        top: -11px;
+        left: 33%;
+    }
+    .newss {
+        background-color: #ffffff;
+        color: #3acf6e;
+        box-shadow: 0px 0px 15px rgb(0 0 0 / 50%);
+    }  
+    #header {
+        transition: all 0.5s;
+        z-index: 997;
+        padding: 4px 0;
+    }
+    .ribtns {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .ribtnss {
+        margin-left: 10%;
+        margin-right: 0;
+    }
+    #header .logo img {
+        max-height: 35px;
+    }
+    #header .logo a {
+        color: #fff;
+        background-color: white;
+        padding: 5% 15%;
+    }
+    .ribtns span {
+        font-weight: 600;
+        margin-left: 34%;
+        color: #e1ffeb !important;
+    }
+
+
+
+
     .homeimages {
         height: 190px;
          margin-left: 8px ;
@@ -1283,9 +1485,7 @@
         background-size: cover;
         position: relative;
     }
-    #header .logo img {
-        max-height: 35px;
-    }
+    
     .ribtn {
         margin-right: 15%;
     }
@@ -1339,6 +1539,84 @@
     }
 }
 @media only screen and (max-width: 360px){
+    
+    .noo p {
+        font-size: 13px;
+        font-weight: 600;
+        margin: 0px 0px 10px 0px;
+        padding-left: 16%;
+    }
+    #hero h1 {
+        padding-left: 9%;
+        font-size: 26px !important;
+        line-height: 60px;
+        text-align: center;
+    }
+    .no h4 {
+        padding-left: 9%;
+        font-size: 21px;
+        line-height: 25px;
+        font-weight: 600;
+    }
+    .relats img{
+        width: 500px;
+    }
+    .relats {
+        position: relative;
+        right: 155px;
+        top: 0px;
+
+    }
+    .news {
+        position: relative;
+        color: white;
+        padding: 8px 20px;
+        border-radius: 8px;
+        background-color: #3acf6e;
+        font-weight: 600;
+        top: -11px;
+        left: 25%;
+    }
+
+    .smsiu{
+        left: 0 !important;
+        margin-left: 0 !important;
+        position: relative;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 5px;
+        background-color: #3acf6e;
+        font-weight: 600;
+        top: -5px;
+        left: 25%;
+        font-size: 15px;
+    }
+    .newss{
+        background-color: #ffffff;
+        color: #3acf6e;
+        box-shadow: 0px 0px 15px rgb(0 0 0 / 50%);
+    }
+
+    .ribtns span {
+        font-weight: 600;
+        
+        margin-left: 34%;
+        color: #e1ffeb  !important;
+    }
+    .ribtns {
+        margin-right: 0px;
+        margin-left: 0;
+    }
+    #header .logo a {
+        color: #fff;
+        background-color: white;
+        padding: 5% 7%;
+    }
+    #header {
+        transition: all 0.5s;
+        z-index: 997;
+        padding: 0px 0;
+    }
     .explore p {
         font-size: 15px;
         font-weight: 600;

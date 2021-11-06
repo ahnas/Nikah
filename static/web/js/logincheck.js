@@ -13,7 +13,7 @@ $(document).ready(function () {
         error: function (jqXHR) {
             if (jqXHR.status == 400) { 
             } else {
-                $('#username').html("<a href='http://127.0.0.1:8000/signup/' class='get-started-btnn'>Sign Up</a>");
+                // $('#username').html("<a href='http://127.0.0.1:8000/signup/' class='get-started-btnn'>Sign Up</a>");
             }
         }
     }); 

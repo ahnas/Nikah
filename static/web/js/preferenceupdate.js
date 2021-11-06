@@ -28,7 +28,7 @@ $(document).ready(function () {
                 window.location.href = "http://127.0.0.1:8000/"
             } else {
                 window.location.href = "http://127.0.0.1:8000/"
-                $('#username').html("<a href='http://127.0.0.1:8000/signup/' class='get-started-btnn'>Sign Up</a>");
+                // $('#username').html("<a href='http://127.0.0.1:8000/signup/' class='get-started-btnn'>Sign Up</a>");
             }
         }
     }); 

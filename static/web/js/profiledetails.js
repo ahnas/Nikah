@@ -52,7 +52,7 @@ $(document).ready(function () {
             if (jqXHR.status == 404) { 
                 var responseText = jQuery.parseJSON(jqXHR.responseText);
             } else {
-                $('#username').html("<a href='http://127.0.0.1:8000/signup/' class='get-started-btnn'>Sign Up</a>");
+                // $('#username').html("<a href='http://127.0.0.1:8000/signup/' class='get-started-btnn'>Sign Up</a>");
             }
         }
     }); 
@@ -94,7 +94,7 @@ $(document).ready(function () {
             if (jqXHR.status == 404) { 
                 var responseText = jQuery.parseJSON(jqXHR.responseText);
             } else {
-                $('#username').html("<a href='http://127.0.0.1:8000/signup/' class='get-started-btnn'>Sign Up</a>");
+                // $('#username').html("<a href='http://127.0.0.1:8000/signup/' class='get-started-btnn'>Sign Up</a>");
             }
         }
     }); 

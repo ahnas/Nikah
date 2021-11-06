@@ -9,14 +9,15 @@
 {% include "web/partials/header2.html" %}
    
 
-    <div class="container pager" style="margin-top:7%">
+    <div class="container pager sedre" style="margin-top:7%">
         <div class="row member justify-content-center trmatch">
 
 
             <div class="col-lg-4 col-md-6 col-sm-12 col-12 text-center">
-                <i class="icofont-clock-time ma" style="color: #1C57C9;"></i>
-                <p class="maa">Pending Verification</p>
+                <img src="{% static 'web/image/pending.gif' %}" alt="">
+                <p class="maa">Thanks for Joining Us</p>
             </div>
+            <p class="maa" style="color: black;">Your Registraion is completed Successfully,We will contact you shortly for verification</p>
             
             
 
@@ -30,7 +31,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <nav class="nav-menu iconn">
-                    <ul>
+                    <ul class="plac">
                       <li><a href="#"><i class="icofont-binoculars mr-2"></i>Explore</a></li>
                       <li><a href="#about"><i class="icofont-ui-text-chat mr-2"></i>Chat</a></li>
                       <li class="active"><a href="#portfolio"><i class="icofont-ui-love-add mr-2"></i>Interests</a></li>
@@ -48,5 +49,5 @@
         
     {% endblock %}
     {% block javascript %}
-    
+    <script src="{% static 'web/js/pending.js' %}"></script>
     {% endblock %}
